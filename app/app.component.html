@@ -1,0 +1,10 @@
+<ActionBar [title]="title"></ActionBar>
+<!--<TabView tabsBackgroundColor="#1f242a" selectedColor="#fff" color="#fff">-->
+<TabView class="main-tab-view" tabsBackgroundColor="#1f242a" selectedColor="#fff">
+    <StackLayout *tabItem="{title: 'Leaderboard'}">
+        <leaderboard></leaderboard>
+    </StackLayout>
+    <StackLayout *tabItem="{title: 'Stats'}">
+        
+    </StackLayout>
+</TabView>

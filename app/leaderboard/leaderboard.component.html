@@ -1,0 +1,10 @@
+<ListView *ngIf="results" [items]="results" class="leaderboard-wrapper small-spacing">
+	<template let-item="item">
+		<GridLayout columns="25, 50, 150, *" rows="auto" class="medium-spacing">
+			<Label col="0" row="0" class="number-rank" [text]="item.rank"></Label>
+			<Image col="1" row="0" class="profile-image" [src]="item.profileImg"></Image>
+			<Label col="2" row="0" [text]="item.userFirstName + ' ' + item.userLastName"></Label>
+			<Label col="3" row="0" [text]="item.tests[0]" style="text-align: right;"></Label>
+		</GridLayout>
+	</template>
+</ListView>
